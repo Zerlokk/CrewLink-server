@@ -64,6 +64,12 @@ Run the server with [Docker](https://docs.docker.com/get-docker/) by running the
 docker run -d -p 9736:9736 ottomated/crewlink-server:latest
 ```
 
+To specify the server domain and run the server with [Docker](https://docs.docker.com/get-docker/) by running the following command:
+
+```
+docker run -e ADDRESS='http://[serverdomain]/' -d -p 9736:9736 ottomated/crewlink-server:latest
+```
+
 To change the external port the server uses, change the *first* instance of the port. For example, to use port 8123:
 
 ```
